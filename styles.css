@@ -6,6 +6,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+
+
 header, footer{
     background-color: #1F2937;
 }
@@ -17,19 +26,17 @@ header, footer{
     cursor: pointer;
 }
 
-header {
-    padding: 1rem 20rem;
-}
-
-nav {
+nav .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
+    padding: 0;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 20px;
 }
 
 nav .links {
@@ -38,10 +45,11 @@ nav .links {
 
 nav .links:hover {
     color: #3882F6;
+    border-bottom: 1px #3882F6 solid;
 }
 
 
-.hero {
+.hero .container {
     display: flex;
     align-items: center;
     padding: 5rem 0;
@@ -86,7 +94,7 @@ ul {
 
 
 .card img {
-    border: 4px #3882F6 solid;
+    border: 2px #3882F6 solid;
     border-radius: 10px;
 }
 
@@ -103,29 +111,23 @@ button {
     padding: 8px 32px;
 }
 
-header button {
-    border: none;
-}
-
-.main {
-    text-align: center;
-}
 
 .main h3 {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+    text-align: center;
 }
 
-.content {
+.main .container .content {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 48px;
-    padding: 100px;
+    gap: 36px;
     padding-top: 0;
+    padding-bottom: 5rem;
 }
 
 .card, .card p {
@@ -138,7 +140,7 @@ header button {
 
 .testimonial {
     background-color: #E5E7EB;
-    padding: 100px 300px;
+    padding: 5rem;
 }
 
 .testimonial p {
@@ -147,23 +149,28 @@ header button {
     font-weight: light;
     font-style: italic;
     text-align: center;
+    margin: 0;
 }
 
 .testimonial h2 {
     text-align: right;
+    margin: 0;
 }
 
 
-.call-to-action {
+.call-to-action .container {
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #3882F6;
     border-radius: 16px;
-    padding: 50px 150px;
-    margin: 100px 20%;
+    padding: 3.5rem 10rem;
     color: white;
+}
+
+.call-to-action {
+    margin: 5rem;
 }
 
 .call-to-action button {
